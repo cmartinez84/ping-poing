@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da|Londrina+Outline|Orbitron|Oswald|Ravi+Prakash|Roboto" rel="stylesheet">
+
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
     <link rel="stylesheet" href="css/mystyles.css" type="text/css">
@@ -13,14 +15,14 @@
   <body>
     <div class="container">
       <div class="well">
-        <h1>Ping-Pong</h1>
-        <p>Enter the number of balls you would like to start your game with. not that each number divisible by three will read "ping" and each divisible by five will read "pong", and each number divisible by either (ie, divisible by 15) will read both ping and "pong"</p>
-      <form id="getNumber"class="form-control" action="index.html" method="post">
+        <h1 class="">Ping-Pong</h1>
+        <h4>Enter the number of balls you would like to start your game with. not that each number divisible by three will read "ping" and each divisible by five will read "pong", and each number divisible by either (ie, divisible by 15) will read both ping and "pong"</h4>
+      <form id="getNumber"class="form-group" action="index.html" method="post">
         <label for="">Enter your number here:</label>
         <input id="numberInput" class="" type="text" name="name" value="" placeholder="number">
         <button type="submit" name="button">SERVE!</button>
-        <p class="numberBall" id="pingPongResults"> 345</p>
       </form>
+      <p class="numberBall" id="pingPongResults"> 345</p>
     </div>
   </div>
 
