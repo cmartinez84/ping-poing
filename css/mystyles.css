@@ -1,0 +1,25 @@
+.numberBall{
+  width: 100px;
+  height: 100px;
+  background: url('../img/ball2.png');
+  text-align: center;
+  font-size: 39px;
+  padding-top: 22px;
+}
+.pongBall{
+  width: 100px;
+  height: 100px;
+  background: url('../img/ball2.png');
+  text-align: center;
+  font-size: 30px;
+  padding-top: 28px;
+}
+.pingPongBall{
+  width: 100px;
+  height: 100px;
+  background: url('../img/ball2.png');
+  text-align: center;
+  font-size: 26px;
+  padding-top: 25px;
+  line-height: 24px;
+}
