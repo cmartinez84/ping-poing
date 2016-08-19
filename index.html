@@ -14,14 +14,19 @@
   </head>
   <body>
     <div class="container">
-      <div class="well">
-        <h1 class="">Ping-Pong</h1>
-        <h4>Enter the number of balls you would like to start your game with. not that each number divisible by three will read "ping" and each divisible by five will read "pong", and each number divisible by either (ie, divisible by 15) will read both ping and "pong"</h4>
-      <form id="getNumber"class="form-group" action="index.html" method="post">
-        <label for="">Enter your number here:</label>
-        <input id="numberInput" class="" type="text" name="name" value="" placeholder="number">
-        <button type="submit" name="button">SERVE!</button>
-      </form>
+      <div class="well row">
+
+          <h1 class=""><span class="glyphicon glyphicon-star-empty"></span>Ping-Pong<span class="glyphicon glyphicon-star-empty"></span></h1>
+          <div class="col-sm-6">
+          <h4>Enter the number of balls you would like to start your game with. not that each number divisible by three will read "ping" and each divisible by five will read "pong", and each number divisible by either (ie, divisible by 15) will read both ping and "pong"</h4>
+        </div>
+        <div class="col-sm-6">
+          <form id="getNumber"class="form-group" action="index.html" method="post">
+            <label for="">Enter your number here:</label>
+            <input id="numberInput" class="" type="text" name="name" value="" placeholder="number">
+            <button type="submit" name="button">SERVE!</button>
+          </form>
+        </div>
     </div>
     <p id="pingPongResults"></p>
   </div>
