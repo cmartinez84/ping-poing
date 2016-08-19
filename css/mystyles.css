@@ -67,9 +67,6 @@ button{
   padding-top: 25px;
   line-height: 24px;
 }
-.balls{
-
-}
 .balls:hover{
   width: 150px;
   height: 150px;
