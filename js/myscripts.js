@@ -31,10 +31,14 @@ var pingPong = function(input){
 $(function(){
   $("#getNumber").submit(function(event){
     event.preventDefault();
+    $(".well").hide();
     numberInput = $("#numberInput").val();
     isValid(numberInput);
     pingPong(numberInput);
-    results = resultsArray.join(" ");
-    $("#pingPongResults").text(results);
+    // results = resultsArray.join(" ");
+    // $("#pingPongResults").text(results);
+    for(var i=0; i <resultsArray.length; i ++){
+      $("#pingPongResults").append("<p class='numberBall'>" + resultsArray[i] + "</p>")
+    }
   });
 });
