@@ -32,7 +32,6 @@ var pingPong = function(input){
 $(function(){
   $("#getNumber").submit(function(event){
     event.preventDefault();
-    $(".well").hide();
     numberInput = $("#numberInput").val();
     if(isNaN(numberInput)){
       $("form").addClass("has-error");
@@ -44,21 +43,21 @@ $(function(){
     }
     for(var i=0; i <resultsArray.length; i ++){
       if(resultsArray[i]==="ping pong"){
-        $("#pingPongResults").append("<p class='pingPongBall'>" + resultsArray[i] + "</p>");
+        $("#pingPongResults").append("<p class='balls pingPongBall'>" + resultsArray[i] + "</p>");
         var random1 = Math.floor(Math.random() * 99);
         var random2 = Math.floor(Math.random() * 99);
         $("p:nth-child("+ (i+1) +")").css({"position":"fixed", "top": random1+"%","left":random2 +  "%"});
 
       }
       else if(resultsArray[i].length ===4){
-        $("#pingPongResults").append("<p class='pongBall'>" + resultsArray[i] + "</p>");
+        $("#pingPongResults").append("<p class='balls pongBall'>" + resultsArray[i] + "</p>");
         var random1 = Math.floor(Math.random() * 99);
         var random2 = Math.floor(Math.random() * 99);
         $("p:nth-child("+ (i+1) +")").css({"position":"fixed", "top": random1+"%","left":random2 +  "%"});
 
       }
       else {
-        $("#pingPongResults").append("<p class='numberBall'>" + resultsArray[i] + "</p>");
+        $("#pingPongResults").append("<p class='balls numberBall'>" + resultsArray[i] + "</p>");
         var random1 = Math.floor(Math.random() * 99);
         var random2 = Math.floor(Math.random() * 99);
         $("p:nth-child("+ (i+1) +")").css({"position":"fixed", "top": random1+"%","left":random2 +  "%"});

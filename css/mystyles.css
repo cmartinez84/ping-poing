@@ -22,6 +22,15 @@ h1{
   text-align: center;
   text-transform: uppercase;
  }
+h1, button{
+  font-family: 'Londrina Outline', cursive;
+}
+button{
+  font-family: "oswald";
+  font-size: 20px !important;
+  margin-top: 23px;
+  margin-left: 43px;
+}
 .instructions, label{
   color: white;
   font-family: "roboto";
@@ -30,55 +39,38 @@ h1{
   font-size: 1.1em;
 
 }
-
-.numberBall{
+.balls{
   width: 100px;
   height: 100px;
   background: url('../img/ball2.png') center center no-repeat;
   background-size: cover;
   text-align: center;
-  font-size: 39px;
-  padding-top: 22px;
   display: inline-block;
-}
-.pongBall{
-  width: 100px;
-  height: 100px;
-  background: url('../img/ball2.png') center center no-repeat;
-  background-size: cover;
-  text-align: center;
-  font-size: 30px;
-  padding-top: 28px;
-  display: inline-block;
-
-}
-.pingPongBall{
-  width: 100px;
-  height: 100px;
-  background: url('../img/ball2.png') center center no-repeat;
-  background-size: cover;
-  text-align: center;
-  font-size: 26px;
-  padding-top: 25px;
-  line-height: 24px;
-  display: inline-block;
-}
-.testball{
-  width: 100px;
-  height: 100px;
-  background: url('../img/ball2.png') center center no-repeat;
-  background-size: cover;
-  text-align: center;
-  font-size: 26px;
-  padding-top: 25px;
-  line-height: 24px;
-  display: inline-block;
-}
-p{
   transition: width 2s, height 2s;
   background-size: cover;
 }
-p:hover{
+.numberBall{
+  font-size: 39px;
+  padding-top: 22px;
+}
+.pongBall{
+  font-size: 30px;
+  padding-top: 28px;
+}
+.pingPongBall{
+  font-size: 26px;
+  padding-top: 25px;
+  line-height: 24px;
+}
+.testball{
+  font-size: 26px;
+  padding-top: 25px;
+  line-height: 24px;
+}
+.balls{
+
+}
+.balls:hover{
   width: 150px;
   height: 150px;
 }
@@ -86,4 +78,7 @@ p:hover{
   color: red ;
   font-size: .8em;
   display: none;
+}
+.col2{
+  text-align: center;
 }
