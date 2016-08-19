@@ -14,7 +14,7 @@ var numberInput;
 var pingPong = function(input){
   for(var i = 1; i <= input; i++){
     if((i % 3 ===0) && (i % 5 ===0)){
-      resultsArray.push("ping-pong");
+      resultsArray.push("ping pong");
     }
     else if(i % 5 === 0){
       resultsArray.push("pong");
@@ -32,17 +32,26 @@ var pingPong = function(input){
 $(function(){
   $("#getNumber").submit(function(event){
     event.preventDefault();
-    // $(".well").hide();
+    $(".well").hide();
     numberInput = $("#numberInput").val();
     if(isNaN(numberInput)){
       $("form").addClass("has-error");
       $("#warning").show();
     }
     else{
+    $(".well").hide();
     pingPong(numberInput);
     }
     for(var i=0; i <resultsArray.length; i ++){
-      $("#pingPongResults").append("<p class='numberBall'>" + resultsArray[i] + "</p>")
+      if(resultsArray[i]==="ping pong"){
+        $("#pingPongResults").append("<p class='pingPongBall'>" + resultsArray[i] + "</p>")
+      }
+      else if(resultsArray[i].length ===4){
+        $("#pingPongResults").append("<p class='pongBall'>" + resultsArray[i] + "</p>")
+      }
+      else {
+        $("#pingPongResults").append("<p class='numberBall'>" + resultsArray[i] + "</p>")
+      }
     }
   });
 });
