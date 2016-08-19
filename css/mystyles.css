@@ -22,11 +22,12 @@ h1{
   text-align: center;
   text-transform: uppercase;
  }
-h4, label{
+.instructions, label{
   color: white;
   font-family: "roboto";
   text-shadow: black 0.1em 0.1em 0.4em;
   padding: auto 40px;
+  font-size: 1.1em;
 
 }
 
@@ -55,4 +56,9 @@ h4, label{
   font-size: 26px;
   padding-top: 25px;
   line-height: 24px;
+}
+#warning{
+  color: red ;
+  font-size: .8em;
+  display: none;
 }
