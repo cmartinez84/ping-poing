@@ -1,3 +1,14 @@
+body{
+  background: url("../img/forestgump2.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.well{
+  margin-top: 25%;
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+}
+
 .numberBall{
   width: 100px;
   height: 100px;
