@@ -6,19 +6,26 @@ body{
 .well{
   margin-top: 25%;
   background: rgba(255,255,255,0.4);
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
+  box-shadow: 6px 17px 31px  5px rgba(0,0,0,.4);
 }
 h1{
   font-size: 8em !important;
   font-weight: bold;
-  /*font-family: 'Baloo Da', cursive;*/
-  font-family: 'Ravi Prakash', cursive;
-  /*font-family: 'Londrina Outline', cursive;*/
-  /*font-family: 'Orbitron', sans-serif;*/
+  font-family: 'Londrina Outline', cursive;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+ }
+h4, label{
+  color: white;
+  font-family: "roboto";
+  text-shadow: black 0.1em 0.1em 0.4em;
 
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4)
 }
+
 .numberBall{
   width: 100px;
   height: 100px;
