@@ -11,14 +11,21 @@ var isValid = function(input){
   )
 }
 var pingPong = function(input){
-  for(var i = 0; i <input; i++){
-    resultsArray.push(i);
+  for(var i = 1; i <= input; i++){
+    if((i % 3 ===0) && (i % 5 ===0)){
+      resultsArray.push("ping-pong");
+    }
+    else if(i % 5 === 0){
+      resultsArray.push("pong");
+    }
+    else if (i % 3 ===0){
+      resultsArray.push("ping");
+    }
+    else{
+    resultsArray.push(i)
+    }
   };
 };
-
-
-
-
 
 ////////front end/////////
 $(function(){
@@ -27,7 +34,7 @@ $(function(){
     numberInput = $("#numberInput").val();
     isValid(numberInput);
     pingPong(numberInput);
-    result = resultsArray.join("");
+    results = resultsArray.join(" ");
     $("#pingPongResults").text(results);
   });
 });
