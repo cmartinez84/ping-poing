@@ -17,12 +17,12 @@
       <div class="well row">
           <h1 class=""><span class="glyphicon glyphicon-star-empty"></span>Ping-Pong<span class="glyphicon glyphicon-star-empty"></span></h1>
           <div class="col-sm-6">
-          <p class="instructions">Enter the number of balls you would like to start your game with. not that each number divisible by three will read "ping" and each divisible by five will read "pong", and each number divisible by either (ie, divisible by 15) will read both ping and "pong"</p>
+          <span class="instructions">Enter the number of balls you would like to start your game with. not that each number divisible by three will read "ping" and each divisible by five will read "pong", and each number divisible by either (ie, divisible by 15) will read both ping and "pong"</span>
         </div>
         <div class="col-sm-6 col2">
           <form id="getNumber"class="" action="index.html" method="post">
             <label for="">Enter your number here:</label>
-            <input  id="numberInput" class="form-control" type="text" name="name" value="" placeholder="number">
+            <input  id="numberInput" class="form-control" type="text" name="name" value="" placeholder="number" required>
             <label id="warning" for="">Your entry was not a number! Please enter a number.</label>
             <div class="col-sm-10">
               <button class=" btn btn-default " type="submit" name="button">SERVE!</button>
@@ -31,12 +31,14 @@
         </div>
     <!-- end well -->
       </div>
-    <p id="pingPongResults"></p>
-    <p class="ball">TEST</p>
+    <div id="resultsContainer">
+      <p id="pingPongResults"></p>
+    </div>
+    <!-- <p class="ball">TEST</p> -->
   </div>
   <!-- end container -->
-<div class="playAgain">
-  <button type="subtmi" name="button">Would you like to play again?</button>
+<div id="playAgain">
+  <button  class="btn btn-danger btn-lg" type="button" name="button">Play Again?</button>
 </div>
 
 

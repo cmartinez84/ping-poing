@@ -82,3 +82,9 @@ button{
 .col2{
   text-align: center;
 }
+#playAgain{
+  position: fixed;
+  top: 45%;
+  left: 40%;
+  display: none;
+}
