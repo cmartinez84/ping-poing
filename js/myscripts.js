@@ -39,7 +39,6 @@ $(function(){
         var random1 = Math.floor(Math.random() * 99);
         var random2 = Math.floor(Math.random() * 99);
         $("p:nth-child("+ (i+1) +")").css({"position":"fixed", "top": random1+"%","left":random2 +  "%"});
-
       }
       else if(resultsArray[i].length ===4){
         $("#pingPongResults").append("<p class='balls pongBall'>" + resultsArray[i] + "</p>");
@@ -54,8 +53,9 @@ $(function(){
         var random2 = Math.floor(Math.random() * 99);
         $("p:nth-child("+ (i+1) +")").css({"position":"fixed", "top": random1+"%","left":random2 +  "%"});
       }
+      $("#playAgain").show();
+
     }
-    $("#playAgain").show();
   });
 
   $("#playAgain").click(function(){
@@ -66,7 +66,7 @@ $(function(){
     $(this).hide();
   });
 
-  $(".balls").click(function(){
-    $(this).detach();
+  $("p").click(function(){
+    $(this).empty();
   });
 });

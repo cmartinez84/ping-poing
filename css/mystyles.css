@@ -13,6 +13,7 @@ span{
   border: none;
   box-shadow: 6px 17px 31px  5px rgba(0,0,0,.4);
 }
+
 h1{
   font-size: 8em !important;
   font-weight: bold;
@@ -70,6 +71,8 @@ button{
 .balls:hover{
   width: 150px;
   height: 150px;
+
+
 }
 #warning{
   color: red ;
