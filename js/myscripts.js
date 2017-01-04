@@ -38,7 +38,7 @@ $(function(){
       setTimeout(makeBalls, 100 * i, resultsArray[i], random1, random2, i);
       setTimeout(function(){
         $("#playAgain").show();
-      }, i * resultsArray.length)
+      }, 100 * resultsArray.length)
     }
   });
 
@@ -59,8 +59,6 @@ var makeBalls = function(ballValue, random1, random2, i){
     $("p:nth-child("+ (i+1) +")").css({"position":"fixed", "top": random1+"%","left":random2 +  "%"});
   }
 }
-
-
 
   $("#playAgain").click(function(){
     numberInput = 0;
