@@ -46,16 +46,16 @@ var makeBalls = function(ballValue, random1, random2, i){
   var blop = new Audio("sounds/blop.wav");
   blop.play();
   if(ballValue==="ping pong"){
-    $("#pingPongResults").append("<p class='balls pingPongBall'>" + resultsArray[i] + "</p>");
+    $("#pingPongResults").append("<p class='balls pingPongBall bounceIn animated'>" + resultsArray[i] + "</p>");
     $("p:nth-child("+ (i+1) +")").css({"position":"fixed", "top": random1+"%","left":random2 +  "%"});
   }
   else if(ballValue.length ===4){
-    $("#pingPongResults").append("<p class='balls pongBall'>" + resultsArray[i] + "</p>");
+    $("#pingPongResults").append("<p class='balls pongBall bounceIn animated'>" + resultsArray[i] + "</p>");
     $("p:nth-child("+ (i+1) +")").css({"position":"fixed", "top": random1+"%","left":random2 +  "%"});
 
   }
   else {
-    $("#pingPongResults").append("<p class='balls numberBall'>" + resultsArray[i] + "</p>");
+    $("#pingPongResults").append("<p class='balls numberBall bounceIn animated'>" + resultsArray[i] + "</p>");
     $("p:nth-child("+ (i+1) +")").css({"position":"fixed", "top": random1+"%","left":random2 +  "%"});
   }
 }

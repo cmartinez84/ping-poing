@@ -68,12 +68,11 @@ button{
   padding-top: 25px;
   line-height: 24px;
 }
-.balls:hover{
+/*.balls:hover{
   width: 150px;
   height: 150px;
+}*/
 
-
-}
 #warning{
   color: red ;
   font-size: .8em;
